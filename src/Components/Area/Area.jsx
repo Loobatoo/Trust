@@ -1,6 +1,7 @@
 import React from 'react'
 
 import classes from './Area.module.css'
+import InputLbl from '../InputLbl'
 
 import { useState } from 'react'
 
@@ -35,21 +36,11 @@ const Area = () => {
         <div className={classes.Banner}>
             <h1> Bem vindo a Área do Cliente! </h1>
         </div>
+        <h1> Quase lá! </h1>
+        <p> Preencha os campos com seu Usuário e senha para acessar sua área do Cliente </p>
         <div className={classes.Form}>
-            <div className={classes.inputlabel}>
-            <label> Usuário: </label>
-            <input 
-                type="text"
-                required 
-                onChange={HandleUsuario}/>
-            </div>
-            <div className={classes.inputlabel}>
-            <label> Senha: </label>
-            <input 
-                type="text"
-                required 
-                onChange={HandleSenha}/>
-            </div>
+          <InputLbl Text="Usuario" Act={HandleUsuario}/>
+          <InputLbl Text="Senha" Act={HandleSenha}/>
         </div>
             <button id="Enviar" onClick={Enviar}> Enviar </button>
       </div>

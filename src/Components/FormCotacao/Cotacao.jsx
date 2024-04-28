@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import classes from './Cotacao.module.css'
+import InputLbl from '../InputLbl'
 
 const Cotacao = () => {
 
@@ -64,48 +65,12 @@ const Cotacao = () => {
       <h1>Cotação 100% Grátis?</h1>
       <h2> Vem com a gente! </h2>
       <div className={classes.Form}>
-        <div className={classes.inputlabel}>
-          <label> Nome: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandleName}/>
-        </div>
-        <div className={classes.inputlabel}>
-          <label> Telefone: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandleTelefone}/>
-        </div>
-        <div className={classes.inputlabel}>
-          <label> CPF: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandleCPF}/>
-        </div>
-        <div className={classes.inputlabel}>
-          <label> CEP: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandleCep}/>
-        </div>
-        <div className={classes.inputlabel}>
-          <label> Placa: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandlePlaca}/>
-        </div>
-        <div className={classes.inputlabel}>
-          <label> Tipo de Seguro: </label>
-          <input 
-            type="text"
-            required 
-            onChange={HandleSeguro}/>
-        </div>
+        <InputLbl Text="Name" Act={HandleName}/>
+        <InputLbl Text="Telefone" Act={HandleTelefone}/>
+        <InputLbl Text="CPF" Act={HandleCPF}/>
+        <InputLbl Text="CEP" Act={HandleCep}/>
+        <InputLbl Text="Placa" Act={HandlePlaca}/>
+        <InputLbl Text="Tipo de Seguro" Act={HandleSeguro}/>
       </div>
       <button id="Enviar" onClick={enviar}> Enviar </button>
     </div>

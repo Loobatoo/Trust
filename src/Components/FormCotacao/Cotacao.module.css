@@ -68,32 +68,6 @@
     width: 40%;
 }
 
-.inputlabel{
-    display: flex;
-    flex-direction: column;
-
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-
-    gap: .5rem;
-}
-
-.inputlabel input{
-    width: 100%;
-
-    border: none;
-    border-bottom: 1px solid black;
-
-    outline: none;
-}
-
-.inputlabel label{
-    width: 100%;
-}
-
 .Footer{
     display: flex;
     
