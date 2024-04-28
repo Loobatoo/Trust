@@ -1,0 +1,37 @@
+#Cotacao{
+    cursor: pointer;
+
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+
+    font-size: 20px;
+    color: var(--var-White);
+}
+
+#Cliente{
+    cursor: pointer;
+
+    font-size: 20px;
+
+    background-color: transparent;
+    border: transparent;
+
+    color: var(--var-White);
+}
+
+#Enviar{
+    cursor: pointer;
+
+    padding: 2rem;
+
+    font-size: 20px;
+
+    background-color: transparent;
+    border: transparent;
+
+    color: black;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --var-White: #ffffff;
+    --var-AzulOceano: #44749d;
+    --var-AzulBebe: #c6d4e1;
+    --var-Beje: #ebe7e0;
+    --var-Cinza: #bdb8ad;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.Header{
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    color: var(--var-White);
+    background-color: var(--var-AzulOceano);
+}
+
+.Body{
+    display: flex;  
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 100%;
+    height: 60%;
+
+    background-image: url(./src/img/Banner.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.Sobre {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 20rem;
+    width: 50%;
+}
+
+.Footer{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    width: 100%;
+
+    background-color: var(--var-Cinza);
+}
+
+.Footer h1{
+    color: var(--var-Beje);
+    font-size: 15px;
+}
+
+#Cotacao{
+    cursor: pointer;
+
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+
+    font-size: 20px;
+    color: var(--var-White);
+
+    text-decoration: none;
+}
+
+#Cliente{
+    cursor: pointer;
+
+    font-size: 20px;
+
+    background-color: transparent;
+    border: transparent;
+
+    color: var(--var-White);
+
+    text-decoration: none;
+}

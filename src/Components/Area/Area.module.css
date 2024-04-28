@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --var-White: #ffffff;
+    --var-AzulOceano: #44749d;
+    --var-AzulBebe: #c6d4e1;
+    --var-Beje: #ebe7e0;
+    --var-Cinza: #bdb8ad;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    color: var(--var-White);
+    background-color: var(--var-AzulOceano);
+}
+
+.Body{
+    display: flex;  
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 100%;
+    height: 60%;
+
+    background-image: url(./src/img/Banner.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.Banner h1{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 50px;
+    color: var(--var-White);
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    gap: 1rem;
+    width: 50%;
+}
+
+.inputlabel{
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    gap: .5rem;
+}
+
+.inputlabel input{
+    width: 100%;
+
+    border: none;
+    border-bottom: 1px solid black;
+
+    outline: none;
+}
+
+.inputlabel label{
+    width: 100%;
+}
+
+
+.Footer{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    width: 100%;
+
+    background-color: var(--var-Cinza);
+}
+
+.Footer h1{
+    color: var(--var-Beje);
+    font-size: 15px;
+}
