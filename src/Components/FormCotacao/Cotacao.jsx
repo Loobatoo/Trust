@@ -66,9 +66,9 @@ const Cotacao = () => {
       <h2> Vem com a gente! </h2>
       <div className={classes.Form}>
         <InputLbl Text="Name" Act={HandleName}/>
-        <InputLbl Text="Telefone" Act={HandleTelefone}/>
-        <InputLbl Text="CPF" Act={HandleCPF}/>
-        <InputLbl Text="CEP" Act={HandleCep}/>
+        <InputLbl Text="Telefone" Type="number" Act={HandleTelefone}/>
+        <InputLbl Text="CPF" Type="number" Act={HandleCPF}/>
+        <InputLbl Text="CEP" Type="number" Act={HandleCep}/>
         <InputLbl Text="Placa" Act={HandlePlaca}/>
         <InputLbl Text="Tipo de Seguro" Act={HandleSeguro}/>
       </div>

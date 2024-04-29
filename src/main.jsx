@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import { createRoot } from 'react-dom/client';
 import Inicial from './Components/App/Inicial';
 import './index.css';
 import Cotacao from './Components/FormCotacao/Cotacao';
-import Area from './Components/Area/Area';
+import LoginArea from './Components/LoginArea/LoginArea';
+import AreadoCliente from './Components/AreaDoCliente/AreadoCliente';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,7 +13,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Inicial />} />
         <Route path="/Cotacao" element={<Cotacao />} />
-        <Route path="/area" element={<Area />} />
+        <Route path="/area" element={<LoginArea />} />
+        <Route path="/areadocliente" element={<AreadoCliente />} />
       </Routes>
     </Router>
   </React.StrictMode>

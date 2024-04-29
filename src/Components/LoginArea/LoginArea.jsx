@@ -1,6 +1,8 @@
 import React from 'react'
 
-import classes from './Area.module.css'
+import { Link } from 'react-router-dom'
+
+import classes from './LoginArea.module.css'
 import InputLbl from '../InputLbl'
 
 import { useState } from 'react'
@@ -40,9 +42,9 @@ const Area = () => {
         <p> Preencha os campos com seu Usuário e senha para acessar sua área do Cliente </p>
         <div className={classes.Form}>
           <InputLbl Text="Usuario" Act={HandleUsuario}/>
-          <InputLbl Text="Senha" Act={HandleSenha}/>
+          <InputLbl Text="Senha" Type="password" Act={HandleSenha}/>
         </div>
-            <button id="Enviar" onClick={Enviar}> Enviar </button>
+        <Link id="Enviar" onClick={Enviar} to="/areadocliente"> Enviar </Link>
       </div>
       <div className={classes.Footer}>
           <h1> Copyright@PedroLobato2024 </h1>
