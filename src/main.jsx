@@ -6,6 +6,7 @@ import './index.css';
 import Cotacao from './Components/FormCotacao/Cotacao';
 import LoginArea from './Components/LoginArea/LoginArea';
 import AreadoCliente from './Components/AreaDoCliente/AreadoCliente';
+import AreadoCorretor from './Components/AreaDoCorretor/AreadoCorretor';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Cotacao" element={<Cotacao />} />
         <Route path="/area" element={<LoginArea />} />
         <Route path="/areadocliente" element={<AreadoCliente />} />
+        <Route path="/areadocorretor" element={<AreadoCorretor />} />
       </Routes>
     </Router>
   </React.StrictMode>

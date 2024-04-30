@@ -1,0 +1,132 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    color: var(--var-White);
+    background-color: var(--var-AzulOceano);
+}
+
+.Body{
+    display: flex;  
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 100%;
+    height: 95vh;
+
+    background-image: url(./src/img/Banner3.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.Banner h1{
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+
+    font-size: 9rem;
+    color: var(--var-White);
+}
+
+.Banner :nth-child(1){
+    font-size: 10rem;
+}
+
+.Cotacoes {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: start;
+
+    width: 50%;
+}
+
+.Footer{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    width: 100%;
+
+    background-color: var(--var-Cinza);
+}
+
+.Footer h1{
+    color: var(--var-Beje);
+    font-size: 15px;
+}
+
+.ContainerCotacoes{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    padding: 1rem;
+    border: .5px solid var(--var-Cinza);
+
+    width: 80%;
+}
+
+.ContainerCotacoes button{
+    border: none;
+    border-radius: 40px;
+    height: 100%;
+    width: 20%;
+
+    padding: 1rem;
+
+    cursor: pointer;
+    
+    transition: .5s;
+}
+
+.ContainerCotacoes button:hover{
+    background-color: var(--var-AzulOceano);
+}
+
+.Infos{
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+}
+
+.Infos h1{
+    font-size: 20px;
+    font-weight: light;
+}
